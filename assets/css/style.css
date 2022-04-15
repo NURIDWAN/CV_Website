@@ -986,21 +986,51 @@ a:hover {
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
-.footer-paralax {
-  padding: 4rem 0 0 0;
+.contact .info {
+  width: 100%;
+  background: #fff;
 }
-
-.contact-mf {
-  margin-top: 4rem;
+.contact .info i {
+  font-size: 20px;
+  color: #34b7a7;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #effbf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
 }
-@media (min-width: 767px) {
-  .contact-mf .box-pl2 {
-    margin-top: 3rem;
-    padding-left: 0rem;
-  }
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
 }
-
-.php-email-form .error-message {
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555555;
+}
+.contact .info .email, .contact .info .phone {
+  margin-top: 40px;
+}
+.contact .info .email:hover i, .contact .info .address:hover i, .contact .info .phone:hover i {
+  background: #34b7a7;
+  color: #fff;
+}
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+.contact .php-email-form .error-message {
   display: none;
   color: #fff;
   background: #ed3c0d;
@@ -1008,7 +1038,7 @@ a:hover {
   padding: 15px;
   font-weight: 600;
 }
-.php-email-form .sent-message {
+.contact .php-email-form .sent-message {
   display: none;
   color: #fff;
   background: #18d26e;
@@ -1016,13 +1046,13 @@ a:hover {
   padding: 15px;
   font-weight: 600;
 }
-.php-email-form .loading {
+.contact .php-email-form .loading {
   display: none;
   background: #fff;
   text-align: center;
   padding: 15px;
 }
-.php-email-form .loading:before {
+.contact .php-email-form .loading:before {
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1034,32 +1064,31 @@ a:hover {
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
 }
-.php-email-form input, .php-email-form textarea {
-  border-radius: 0;
+.contact .php-email-form input, .contact .php-email-form textarea {
+  border-radius: 4px;
   box-shadow: none;
   font-size: 14px;
 }
-.php-email-form input:focus, .php-email-form textarea:focus {
-  border-color: #0078ff;
+.contact .php-email-form input:focus, .contact .php-email-form textarea:focus {
+  border-color: #34b7a7;
 }
-.php-email-form input {
-  padding: 10px 15px;
+.contact .php-email-form input {
+  height: 44px;
 }
-.php-email-form textarea {
-  padding: 12px 15px;
-  margin-bottom: 0;
+.contact .php-email-form textarea {
+  padding: 10px 12px;
 }
-.php-email-form button[type=submit] {
-  background: #0078ff;
+.contact .php-email-form button[type=submit] {
+  background: #34b7a7;
   border: 0;
-  padding: 10px 24px;
+  padding: 10px 30px 12px 30px;
   color: #fff;
   transition: 0.4s;
+  border-radius: 50px;
 }
-.php-email-form button[type=submit]:hover {
-  background: #3393ff;
+.contact .php-email-form button[type=submit]:hover {
+  background: #3dc8b7;
 }
-
 @-webkit-keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1068,7 +1097,6 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1077,57 +1105,7 @@ a:hover {
     transform: rotate(360deg);
   }
 }
-/*--------------------------------------------------------------
-# Blog
---------------------------------------------------------------*/
-@media (min-width: 767px) {
-  .card-blog {
-    margin-bottom: 3rem;
-  }
-}
-.card-blog .card-body {
-  position: relative;
-}
-.card-blog .card-category-box {
-  position: absolute;
-  text-align: center;
-  top: -16px;
-  left: 15px;
-  right: 15px;
-  line-height: 25px;
-  overflow: hidden;
-}
-.card-blog .card-category {
-  display: inline-block;
-  color: #fff;
-  padding: 0 15px 5px;
-  overflow: hidden;
-  background-color: #0078ff;
-  border-radius: 4px;
-}
-.card-blog .card-category .category {
-  color: #fff;
-  display: inline-block;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  letter-spacing: 0.1px;
-  margin-bottom: 0;
-}
-.card-blog .card-title {
-  font-size: 1.3rem;
-  margin-top: 0.6rem;
-}
-.card-blog .card-description {
-  color: #4e4e4e;
-}
-.card-blog .post-author {
-  display: inline-block;
-}
-.card-blog .post-date {
-  color: #4e4e4e;
-  display: inline-block;
-  float: right;
-}
+
 
 /*--------------------------------------------------------------
 # Blog Single
